@@ -1,0 +1,149 @@
+:root {
+  --brand-color-first: #2f303a;
+  --brand-color-second: #2196f3;
+  --brand-color-third: #ffffff;
+  --brand-color-fourth: #757575;
+}
+
+body {
+  font-family: "Roboto", "Raleway", Verdana, Tahoma, sans-serif;
+  color: #212121;
+}
+.logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  font-style: bold;
+  line-height: 1.19;
+  color: var(--brand-color-second);
+}
+.logo__studio--header {
+  color: #000000;
+}
+a {
+  text-decoration: none;
+}
+.navigation__link {
+  font-size: 14px;
+  line-height: 1.14;
+  color: #212121;
+}
+.navigation__link:hover,
+.navigation__link:focus {
+  color: var(--brand-color-second);
+}
+.navigation__portfolio {
+  color: var(--brand-color-second);
+}
+.header-contact {
+  color: var(--brand-color-fourth);
+  font-size: 14px;
+  line-height: 1.14;
+}
+.header-contact:hover,
+.header-contact:focus {
+  color: var(--brand-color-second);
+}
+.section-main {
+  background-color: var(--brand-color-first);
+}
+.section-main__header {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  color: var(--brand-color-third);
+}
+.section-main__button {
+  color: var(--brand-color-third);
+  background-color: var(--brand-color-second);
+  padding: 10px 41px;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: bold;
+  font-weight: 700;
+  line-height: 1.88;
+  cursor: pointer;
+}
+.article__title {
+  color: var(--brand-color-first);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.17;
+}
+.article__text {
+  color: var(--brand-color-fourth);
+  font-size: 14px;
+  line-height: 1.71x;
+}
+.section__header {
+  color: var(--brand-color-first);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+}
+.team__member {
+  font-size: 16px;
+  line-height: 1.19;
+}
+.team__name {
+  color: var(--brand-color-first);
+  font-weight: 500;
+}
+.team__position {
+  color: var(--brand-color-fourth);
+  font-weight: 400;
+}
+
+.btn {
+  background-color: F5F4FA;
+  border-width: 0;
+  height: 38px;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.63;
+  border-radius: 3px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding: 6px 22px;
+  cursor: pointer;
+}
+.btn:hover,
+.btn:focus {
+  color: var(--brand-color-third);
+  background-color: var(--brand-color-second);
+}
+.project__name {
+  font-weight: 700;
+  font-size: 18px;
+  font-style: bold;
+  line-height: 2;
+  color: var(--brand-color-first);
+}
+.project__type {
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.88;
+  color: var(--brand-color-fourth);
+}
+
+.footer {
+  background-color: var(--brand-color-first);
+}
+.logo__studio--footer {
+  color: var(--brand-color-third);
+}
+.footer-contact {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-contact:hover,
+.footer-contact:focus {
+  color: var(--brand-color-second);
+}
+.address {
+  color: var(--brand-color-third);
+}
