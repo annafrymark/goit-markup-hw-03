@@ -22,6 +22,7 @@ body {
   padding-right: 15px;
   flex-direction: row;
   align-items: center;
+  margin-bottom: 94px;
 }
 
 .header {
@@ -110,21 +111,30 @@ ul {
   font-size: 44px;
   line-height: 1.36;
   color: var(--brand-color-third);
-  /* padding-top: 200;
-  margin-bottom: 280; */
-  /* display: block; */
-  justify-content: center;
+  padding-top: 200;
+  /* margin-bottom: 280; */
+  display: flex;
+  text-align: center;
+  border: 1px dotted rgb(57, 209, 57);
 }
 .section-main__button {
   color: var(--brand-color-third);
   background-color: var(--brand-color-second);
-  padding: 10px 41px;
   font-family: "Roboto";
   font-size: 16px;
   font-style: bold;
   font-weight: 700;
   line-height: 1.88;
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 41px 10px 42px;
+  /* margin-bottom: 200px; */
+}
+
+.article__list {
+  display: flex;
+  flex-direction: row;
 }
 .article__title {
   color: var(--brand-color-first);
@@ -135,7 +145,9 @@ ul {
 .article__text {
   color: var(--brand-color-fourth);
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.71x;
+  letter-spacing: 0.03em;
 }
 .section__header {
   color: var(--brand-color-first);
