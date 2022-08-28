@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header container">
+    <header class="header">
+      <div class="container header-container">
       <!--tu powinno być logo-->
       <a href="/" class="logo"
         >Web<span class="logo__studio--header">Studio</span></a
@@ -40,17 +41,20 @@
           <a href="tel:+48111111111" class="header-contact">+48 111 111 111</a>
         </li>
       </ul>
+      </div>
     </header>
 
     <main>
-      <section class="section-main container">
+      <section class="section-main section">
+      <div class="container main-container">
         <h1 class="section-main__header">
           EFEKTYWNE ROZWIĄZANIA <br />DLA WASZEGO BIZNESU
         </h1>
         <button type="button" class="section-main__button">Zamów usługe</button>
+      </div>
       </section>
 
-      <section class="section container">
+      <section class="section container articles">
         <ul class="article__list">
           <li class="article__item">
             <h3 class="article__title">LOREM IPSUM</h3>
@@ -113,7 +117,8 @@
         </ul>
       </section>
 
-      <section class="section container team">
+      <section class="section team">
+        <div class="container">
         <h2 class="section__header">Nasz zespół</h2>
         <ul class="team__list">
           <li class="team__item">
@@ -180,10 +185,12 @@
             </figure>
           </li>
         </ul>
+        </div>
       </section>
     </main>
 
-    <footer class="footer container">
+    <footer class="footer">
+      <div class="container">
       <a href="/" class="logo logo__footer"
         >Web<span class="logo__studio--footer">Studio</span></a
       >
@@ -203,6 +210,7 @@
           <a href="tel:+48111111111" class="footer-contact">+48 111 111 111</a>
         </li>
       </ul>
+      </div>
     </footer>
   </body>
 </html>

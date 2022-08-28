@@ -14,12 +14,22 @@ body {
   font-family: "Roboto", "Raleway", Verdana, Tahoma, sans-serif;
   color: #212121;
 }
-
+.section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .container {
   display: flex;
+  flex-direction: column;
   padding-left: 15px;
   padding-right: 15px;
-  align-items: center;
+  /* align-items: center; */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .header {
@@ -27,14 +37,17 @@ body {
   align-items: center;
   border-bottom: 1px solid #eeeeee;
 }
+.header-container {
+  display: flex;
+  flex-direction: row;
+}
 .logo {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
-  font-style: bold;
   line-height: 1.19;
   color: var(--brand-color-second);
-  margin: 24px 93px 25px 15px;
+  margin: 24px 93px 25px 0;
 }
 .logo__studio--header {
   color: #000000;
@@ -89,47 +102,61 @@ ul {
 .header-contact:focus {
   color: var(--brand-color-second);
 }
+.section__header {
+  margin: 0;
+  padding: 0;
+}
 .section-main {
   background-color: var(--brand-color-first);
   display: flex;
   justify-content: center;
-  flex-direction: column;
   min-height: 600px;
-  margin-bottom: 94px;
+}
+.main-container {
+  align-items: center;
 }
 .section-main__header {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   color: var(--brand-color-third);
-  padding-top: 200;
-  display: flex;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
+
 .section-main__button {
   color: var(--brand-color-third);
   background-color: var(--brand-color-second);
   font-family: "Roboto";
   font-size: 16px;
-  font-style: bold;
   font-weight: 700;
   line-height: 1.88;
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 10px 41px 10px 42px;
+  margin-top: 30px;
+  width: 200px;
+  height: 50px;
 }
-
+.articles {
+  padding-bottom: 0;
+}
 .article__list {
   display: flex;
   flex-direction: row;
+  gap: 30px;
+  min-width: 1170px;
+}
+.article__item {
+  flex-basis: calc((100% - 3 * 30px) / 4);
 }
 .article__title {
   color: var(--brand-color-first);
   font-size: 14px;
   font-weight: 700;
   line-height: 1.17;
-  padding: 0 15px 0 15px;
 }
 .article__text {
   color: var(--brand-color-fourth);
@@ -137,14 +164,12 @@ ul {
   font-weight: 400;
   line-height: 1.71x;
   letter-spacing: 0.03em;
-  padding: 0 15px 0 15px;
 }
 .section__header {
   color: var(--brand-color-first);
   font-size: 36px;
   font-weight: 700;
   line-height: 1.17;
-  padding-top: 94px;
   padding-bottom: 50px;
   margin: 0;
   text-align: center;
@@ -153,18 +178,13 @@ ul {
   display: flex;
   flex-direction: row;
   min-width: 1170px;
+  margin: 0 -15px;
 }
 .picture {
   display: flex;
-  margin-left: 30px;
-  margin-right: 30px;
-  /* padding: 0 15px 0 15px; */
-  margin-bottom: 94px;
+  margin: 0 15px;
 }
-.section {
-  display: flex;
-  flex-direction: column;
-}
+
 .team {
   background-color: #f5f4fa;
   margin-bottom: 0;
@@ -174,7 +194,6 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 94px;
   min-width: 1170px;
 }
 .team__item {
@@ -208,10 +227,13 @@ ul {
   font-weight: 400;
   text-align: center;
 }
+.buttons {
+  padding-bottom: 0;
+  align-items: center;
+}
 .btn__list {
   display: flex;
   margin-bottom: 34px;
-  margin-top: 94px;
 }
 .btn {
   background-color: F5F4FA;
@@ -235,7 +257,10 @@ ul {
   color: var(--brand-color-third);
   background-color: var(--brand-color-second);
 }
-.img {
+.projects {
+  padding-top: 0;
+}
+img {
   display: block;
 }
 .project__list {
@@ -265,7 +290,6 @@ figcaption {
 .project__name {
   font-weight: 700;
   font-size: 18px;
-  font-style: bold;
   line-height: 2;
   color: var(--brand-color-first);
   padding: 20px 0 0 24px;
@@ -284,16 +308,16 @@ figcaption {
 .footer {
   background-color: var(--brand-color-first);
   min-height: 252px;
-  width: 1600px;
+}
+
+.footer-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-top: 94px;
 }
-
 .logo__footer {
-  padding: 60px 0 20px 15px;
+  padding: 60px 0 20px 0;
   margin: 0;
 }
 .logo__studio--footer {
@@ -303,7 +327,6 @@ figcaption {
 .footer__list {
   display: flex;
   flex-direction: column;
-  margin-left: 15px;
 }
 .footer-contact {
   font-size: 14px;
