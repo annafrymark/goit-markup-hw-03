@@ -199,8 +199,6 @@ ul {
 .team__item {
   display: flex;
   justify-content: center;
-  margin: 0;
-  padding: 0;
 }
 .team__photo {
   display: block;
@@ -273,7 +271,6 @@ img {
   padding: 0;
   margin: 0;
 }
-
 .project__item > figure {
   flex-basis: calc((100% - 2 * 30px) / 3);
   margin: 0;
@@ -286,7 +283,6 @@ img {
 figcaption {
   border: 1px solid #eeeeee;
 }
-
 .project__name {
   font-weight: 700;
   font-size: 18px;
@@ -309,7 +305,6 @@ figcaption {
   background-color: var(--brand-color-first);
   min-height: 252px;
 }
-
 .footer-container {
   display: flex;
   flex-direction: column;
@@ -323,7 +318,6 @@ figcaption {
 .logo__studio--footer {
   color: var(--brand-color-third);
 }
-
 .footer__list {
   display: flex;
   flex-direction: column;
